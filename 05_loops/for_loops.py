@@ -1,14 +1,26 @@
-# Basic while loop
-i = 1
+# Basic for loop
+for x in range(5):
+    print(x)
 
-while i <= 5:
-    print(i)
-    i = i + 1
+# Print Hello World 5 times
+for x in range(5):
+    print("Hello World")
 
+# Range from 10 to 49
+for x in range(10, 50):
+    print(x)
 
-# Countdown
-countdown = 10
+# Even numbers from 2 to 20
+for x in range(2, 21, 2):
+    print(x)
 
-while countdown >= 1:
-    print(countdown)
-    countdown = countdown - 1
+# Backward counting
+for x in range(20, 1, -2):
+    print(x)
+
+# Server status check
+for x in range(1, 11):
+    if x % 3 == 0:
+        print("Server", x, ": WARNING")
+    else:
+        print("Server", x, ": ONLINE")
